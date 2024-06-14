@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    
+    <script>
+        //Object creation
+        const person = {
+            name : "Jagjot Singh",
+            Class : "B.Tech IT-A2",
+            CRN : 2121054,
+            URN : 2104512
+        }
+        document.getElementById("demo").innerHTML = person.name+ "<br>" + person.URN;
+    </script>
+</body>
+</html>
+ -->
+
+<!-- 2nd method -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id = "demo"></p>
+    <script>
+        //object creation
+        const person = new Object();
+        person.name = "Jajgot Singh";
+        person.class = "B.tech IT-A2";
+        person.URN = 2121054;
+        person.CRN = 2104512;
+
+        //Object Calling
+        document.getElementById("demo").innerHTML = person.name +"<br>" + person.URN;
+    </script>
+ </body>
+ </html>

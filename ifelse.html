@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id  = "demo"></p>
+    <script>
+        const hours = new Date().getHours();     //This getHours function will fetch the real time and shows output
+        if (hours <20){
+            greeting  = "Good Morning";
+        }
+        else{
+            greeting = "Good evening";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <p id="result"></p>  
+    <input type="number" placeholder="Enter Marks" id="marks" value=""><br><br>      
+    Click to check if you pass or fail <br>                
+    <input type="button" onclick="myMarks()" value="Enter">            
+    <!-- id should be same with element that we have to display -->
+    <script>
+        function myMarks() {
+            // Retrieve the value from the input field and convert it to a number
+            var marks = Number(document.getElementById('marks').value);
+            
+            // Determine the result
+            var resultMessage;
+            if (marks <= 30) {
+                resultMessage = "You are fail";
+            } else {
+                resultMessage = "You are pass";
+            }
+            
+            // Display the result
+            document.getElementById('result').innerHTML = resultMessage;
+        }
+    </script>
+</body>
+</html>

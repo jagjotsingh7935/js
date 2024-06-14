@@ -1,0 +1,46 @@
+<!-- EXample of for loop
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const age = [21,30,44,50];
+
+        let text =" ";
+        for(let i=0;i<age.length;i++){
+            text += age[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html> -->
+
+
+<!-- Example of For in loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <script>
+        const numbers = [22,54,68,46,75];
+        let text = " ";
+        for(let x in numbers){
+            text += numbers[x] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

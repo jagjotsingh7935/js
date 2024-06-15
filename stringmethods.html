@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <script>
+        let text = "Jagjot Singh";
+        document.getElementById("demo").innerHTML = text.slice(3,8)+"<br>"+text.slice(9)+"<br>"+text.substr(7,5)+"<br>"+text.length +" <br>"+ text.charAt(4) +"<br>" + text.charCodeAt(0)+ "<br" ;
+        
+    </script>
+</body>
+</html>
+
+<!-- 
+IN slice-- method the text.slice(3,7)=>The first parameter is start position and the second parameter is the ending position(3 index ton shuru kru te 7 indec ton ikk pehla ala indec print kru) -->
+<!-- 
+In string substring method --text.substr(3,7)=>The first parameter is the start positrion and the second paraerter specifies the lenth of that iparameter from where you are starting the index(3 ton start kru te 7th index tkk print kru..) -->

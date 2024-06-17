@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <script>
+        //Constructor function Creation
+        function Person(first,last,age){
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            
+        }
+        //Creating person objects
+        const myFather = new Person("Jot","Singh",50);
+        const myMother = new Person("abc","kaur",40);
+        
+        //Adding a method to change name
+        myMother.changename = function(name){
+            this.lastname = name;
+        }
+
+        //Changing the name
+        myMother.changename("def");
+
+
+        //Another method
+        Person.prototype.changename = function(name){
+            this.lastname = name;
+        }
+        myMother.changename("ijk");     //It will override the previous method
+        
+
+        document.getElementById("demo").innerHTML = "My Mother name is "+myMother.firstname+" "+myMother.lastname;
+    </script>
+</body>
+</html>
+</body>
+</html>

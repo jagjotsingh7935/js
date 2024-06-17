@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incremental Concatenate String</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            margin: 5px 0;
+        }
+        #output {
+            white-space: pre-line; /* Preserve newlines */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Incremental Concatenate String</h1>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <input type="number" id="inputNumber" placeholder="Enter number of times">
+    <button onclick="concatenateString()">Concatenate</button>
+    <p id="output"></p>
+
+    <script>
+        function concatenateString() {
+            const str = document.getElementById('inputString').value;
+            const n = parseInt(document.getElementById('inputNumber').value, 10);
+            const result = incrementalConcat(str, n);
+            document.getElementById('output').textContent = result;
+        }
+
+        function incrementalConcat(str, n) {
+            let result = '';
+            for (let i = 1; i <= n; i++) {
+                result += str.repeat(i) + '\n';
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>

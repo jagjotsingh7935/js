@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="text" name="string" id="inputString">
+    <input type="button" onclick="isString()" value="Click it">
+    <script>
+        function isString() {
+            var input = document.getElementById('inputString').value;
+            var isString = typeof input === 'string' && input.trim().length > 0;
+
+            document.getElementById("demo").innerHTML = isString ? "True, it is a string" : "False, it is not a valid string";
+        }
+    </script>
+</body>
+</html>

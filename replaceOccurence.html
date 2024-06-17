@@ -8,8 +8,8 @@
 <body>
     <p id = "demo"></p>
     <script>
-        let text = "js string exercises";
-      document.getElementById("demo").innerHTML = text.charAt(0).toUpperCase()+text.slice(1);
+        let text = "They ate 5 apples and 5 orranges";
+        document.getElementById("demo").innerHTML = text.replace(/5/g,"five");
     </script>
 </body>
 </html>

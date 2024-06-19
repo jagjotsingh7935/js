@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //Popping and pushing of arrray -->
+     <!-- Popping and pushing is done at the end of the array  -->
+
+    <p id = "demo"></p>
+    <p id ="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById('demo').innerHTML = fruit.push("kiwi");
+        // document.getElementById("demo3").innerHTML = fruit.pop();    //cannot do both in the same script tag
+        document.getElementById("demo1").innerHTML = fruit;
+        
+    </script>
+</body>
+</html>

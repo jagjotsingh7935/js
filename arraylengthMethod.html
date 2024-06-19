@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The Length property helps to add new element into the array without using push operation</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        fruits[fruits.length] = "kiwi";
+        document.getElementById("demo1").innerHTML = fruits;
+    </script>
+</body>
+
+</html>

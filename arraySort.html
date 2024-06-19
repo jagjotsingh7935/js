@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Sort() method alters the same array <br>
+        toSorted() is a safe way and creates new array to sort the array<br><br>
+
+        Both work is same<br><br>
+    </p>
+    <p id="demo"></p>
+    <p id ="demo1"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        const sorted = fruits.toSorted();
+
+        document.getElementById("demo").innerHTML = fruits.sort();    //Sorts the elemnts alphbetically
+        document.getElementById("demo1").innerHTML = sorted;
+    </script>
+</body>
+</html>

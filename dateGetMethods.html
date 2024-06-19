@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id ="demo1"></p>
+    <p id = demo2></p>
+    <p id="demo3"></p>
+    <p id = "demo4"></p>
+    <script>
+        const d = new Date();
+        const c = new Date();
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        d.getFullYear();
+        
+        document.getElementById("demo").innerHTML = d +"<br>"+ d.getDay();
+        document.getElementById("demo1").innerHTML = c.getMonth() + 1;   //We are adding +1 to get the correct month number
+        document.getElementById("demo2").innerHTML = months[d.getMonth()];
+        document.getElementById('demo3').innerHTML = d.getDate()+"<br>"+d.getTimezoneOffset();
+        document.getElementById("demo4").innerHTML = d.getHours();
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const letters = new Set(["a","b","c"]);
+        letters.add("d");    //add method
+        let text = " ";
+        letters.forEach(function(x){       //Listing method
+            text += x + "<br>";
+        })
+
+        document.getElementById("demo").innerHTML = text+letters.has("d") ;        //has method
+    </script>
+</body>
+</html>

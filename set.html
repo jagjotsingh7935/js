@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const letters = new Set(["a","b","c"]);    //Always write in quotes cannot access numbers
+        const a= "d";
+        const b = "e";
+        const c = "f";
+
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+
+
+        document.getElementById("demo").innerHTML = letters.size  ;    
+    </script>
+</body>
+</html>

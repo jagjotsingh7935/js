@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const letters = new Set(["a","b","c"]);
+        let text = " ";
+        for(const entry of letters.values()){
+            text +=entry+"<br>";
+
+        }
+
+        for(const entry of letters.keys()){
+            text +=entry +"<br>";                       //Keys list the same as the values does
+        }
+
+
+        for(const entry of letters.entries()){       //Entries list both keys and values    keys,values
+            text +=entry + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;    
+    </script>
+</body>
+</html>

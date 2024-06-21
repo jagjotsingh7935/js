@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        //Creating array
+        const fruits  = [
+            {name:"apples",quantity:"500"},
+            {name:"banana",quantity:"400"},
+            {name:"mango",quantity:"300"},
+            {name:"orrange",quantity:"200"},
+            {name:"kiwi",quantity:"100"}
+
+        ]
+        const result = Map.groupBy(fruits,fruitCheck);
+
+        function fruitCheck({quantity}){
+            return quantity>200?  "ok":"low";
+        }
+        let text = "These fruits are Ok: <br>";
+        for(let x of result.get("ok")){
+            text+= x.name+" "+x.quantity +"<br>";
+        }
+        let a = "These fruits are Low:<br>"
+        for(let x of result.get("low")){
+            a+= x.name +" "+x.quantity +"<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+        document.getElementById("demo1").innerHTML = a;
+    </script>
+</body>
+</html>

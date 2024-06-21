@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //The entries() method returns an iterator object with the [key,values] in a map
+    const fruits = new Map([
+            ["apples",500],
+            ["banana",400],
+            ["mango",300],
+        ])
+        let text = " ";
+    for(let x of fruits.entries()){     //We can also use fruits.keys()=>to print the keys and 
+        text += x +"<br>";              //fruits.values()=> to print the values
+    }                                    
+    document.getElementById("demo").innerHTML = text;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const fruits = new Map([
+            ["apples",500],
+            ["banana",400],
+            ["mango",300],
+        ])
+
+        //Mapping methods
+        //1.set method
+        fruits.set("kiwi",200);
+
+        //2.get Method
+        let a = fruits.get("banana");
+
+        //3.has method
+        fruits.has("banana");
+
+        //4.delete Method
+        fruits.delete("apples");
+
+        //5.clear method
+        fruits.clear();
+
+        document.getElementById("demo").innerHTML = fruits.size;
+
+    </script>
+</body>
+</html>

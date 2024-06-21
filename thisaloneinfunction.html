@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>if we use <b>"use strict" </b>while using function it will show undefined</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function myFunction(){
+            return this;
+        }
+        document.getElementById("demo").innerHTML = myFunction();
+    </script>
+    <script>
+        "use strict";
+        function myFunction(){
+            return this;
+        }
+        document.getElementById("demo1").innerHTML =myFunction();
+    </script>
+</body>
+</html>

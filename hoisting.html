@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo">Always declare at top means always assign value at top</p>
+
+    <script>
+        // var x;    // declearation of x
+        x = 5;
+        var y;
+        // var y=7;
+    
+        let element = document.getElementById("demo");
+        element.innerHTML = x + " " + y;                                //We can assign the value to a varible before recdlaring it
+        var x;
+        y=7;           //it will not assign value to y because hoisting it not work for initialization it only works for declare ... So always declare at top
+    </script>
+</body>
+</html>

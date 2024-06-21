@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        //Creating Objects
+        const apples = { name: "Apples" };
+        const banana = { name: "Bananas" };
+        const orrange = { name: "Orranges" };
+
+        //Creating Map object
+        const fruits = new Map();
+
+        //adding elements to a map
+        fruits.set(apples, 500);
+        fruits.set(banana, 400);
+        fruits.set(orrange, 300);
+
+        document.getElementById("demo").innerHTML = fruits.get(apples);
+    </script>
+</body>
+
+</html>

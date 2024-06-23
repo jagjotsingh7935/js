@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="form-group">
+            <label for="inputTemperature">Enter Temperature : </label>
+            <input type="number" name="" id="inputTemperature" placeholder="Enter the temperature">
+            <select id="inputUnit">
+                <option value="Celsius">Celsius</option>
+                <option value="Farenheiht">Farenheiht</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="1" disabled>--Select Input unit</option>
+            </select>
+
+            <label for="outputUnit">Convert To : </label>
+            <select id="outputUnit">
+                <option value="Celsius">Celsius</option>
+                <option value="Farenheiht">Farenheiht</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="disabled" disabled >--Select Output unit--</option>
+            </select>
+        </div>
+        <button onclick="temperatureConverter()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

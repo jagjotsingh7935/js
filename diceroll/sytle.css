@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #012c36;
+    font-family: Arial, sans-serif;
+    
+}
+
+.container {
+    text-align: center;
+    background: #add9e4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(216, 34, 34, 0.1);
+}
+
+.player-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.player-inputs div {
+    margin: 0 10px;
+}
+
+.player-inputs label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.player-inputs input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #04aed4;
+    border-radius: 5px;
+}
+
+.dice {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dice img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #012c36;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #00829f;
+}
+
+#result, #winner {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}

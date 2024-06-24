@@ -1,15 +1,24 @@
+
 function diceroll(player){
     const dice1 = document.getElementById("dice1");
     const dice2 = document.getElementById("dice2");
     const result = document.getElementById("result");
+    const winner = document.getElementById("winner");
 
     const player1 = document.getElementById("player1-name").value || "Player1";   //Je koi name ni metion kr rhe tn playuer 1 show hoyu
 
     const player2 = document.getElementById("player2-name").value || "Player 2";
+    
+    dice1.src = `dice.gif`;
+    dice2.src = `dice.gif`;
+   
 
     //Generates number between 1 to 6
+    setTimeout(function(){
+   
     const randomdice1 = Math.floor(Math.random()*6)+1;
     const randomdice2 = Math.floor(Math.random()*6)+1;
+
 
     dice1.src = `images/dice-${randomdice1}.png`;
     dice2.src = `images/dice-${randomdice2}.png`;
@@ -31,7 +40,10 @@ function diceroll(player){
     else{
         winner.textContent = `${player2} wins! against ${player1} with a total of ${total}`
     }
-
     
+    player1total =0;
+    player2total =0;
+
+},3000);
 
 }

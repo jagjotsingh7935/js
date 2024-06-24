@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        class Car{
+            constructor(brand){
+                this.name = brand;
+                
+            }
+            get carname(){
+                return this.name;
+            }
+            set carname(x){
+                this.name = x;                          //Using setters property to change the car name if we will not use set property then
+                                                         //the car name would be ford
+            }
+        }
+        const mycar = new Car("Ford"); 
+        mycar.carname = "Mustang";                                    //Changing set property to change the car name  
+        document.getElementById("demo").innerHTML = mycar.name;
+    </script>
+</body>
+</html>

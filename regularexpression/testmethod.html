@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p id="demo">The best things in the life are free</p>
+    <script>
+        let text = document.getElementById("demo").value;
+        const pattern = /z/;                //Search for z but z is not in the pattern
+        document.getElementById("result").innerHTML = pattern.test(text);
+    </script>
+</body>
+</html>

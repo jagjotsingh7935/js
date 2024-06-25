@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Using /gi instead of /i helps to select all the cats written in the text</b></p>
+    <p id="demo"></p>
+    <script>
+        const text = "The cats are in the Tiger Family.Cats flexibilty is awesome.Cats do a meaow";
+        document.getElementById("demo").innerHTML = text.replace(/cats/gi,"Dogs");   
+    </script>
+</body>
+</html>

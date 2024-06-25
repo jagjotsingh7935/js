@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let text  = "My contact number is 555-123-4567. Call me anytime!";
+        let pattern = /555-123-4567/;
+        document.getElementById("result").innerHTML = pattern.exec(text);
+    </script>
+</body>
+</html>

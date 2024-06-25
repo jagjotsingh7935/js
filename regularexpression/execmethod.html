@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result">Exec method searches for specified pattern</p>
+    <script>
+        let text = "The best things in the life are free!";
+        let pattern = /things/;
+        document.getElementById("result").innerHTML = pattern.exec(text);
+    </script>
+</body>
+</html>

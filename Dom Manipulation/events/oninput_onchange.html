@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>While using onchange when you leave the input field it will change</h2>
+    <h2>While using oninput when you wnter it will automatically convert it to upper case</h2>
+    Onchange : <input type="text" id="fname" onchange="upperCase()"> <br> <br>
+    oninput : <input type="text" name="fname" id="lname" oninput="upperCase()">
+
+    <script>
+        function upperCase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+
+        function upperCase() {
+            const x = document.getElementById("lname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>

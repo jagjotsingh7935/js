@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>Extract only the name properties from an array of objects:</b></p>
+    <p id="demo"></p>
+    <script>
+        const employees = [
+            { name: "David", department: "Engineering" },
+            { name: "Emily", department: "Marketing" },
+            { name: "Frank", department: "Sales" }
+        ];
+
+        let text = " ";
+        for (const employee of employees) {
+            text += employee.name + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>Extract street from the address property of an object:</b></p>
+    <p id="demo"></p>
+    <script>
+        const user = {
+            name: "Charlie",
+            address: {
+                street: "12 Main St",
+                city: "Anytown"
+            }
+        };
+
+        let{address:{street}} = user;                  //fetching strret from user inside address
+        document.getElementById("demo").innerHTML = street;
+    </script>
+</body>
+
+</html>

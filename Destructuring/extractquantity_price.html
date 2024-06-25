@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <P><B>Extract quantity and price from a product object:</B></P>
+    <p id="demo"></p>
+    <script>
+        const product = {
+            name: "T-Shirt",
+            category: "Clothing",
+            details: {
+                quantity: 10,
+                price: 19.99
+            }
+        };
+
+        let {details:{quantity,price}} = product;
+
+        document.getElementById("demo").innerHTML = "The quantity is : "+quantity+"<br>The price is : "+price;
+    </script> 
+</body>
+
+</html>

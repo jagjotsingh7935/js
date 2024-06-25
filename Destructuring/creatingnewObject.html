@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>Create a new object with only specific properties from another object</b></p>
+    <p id="demo"></p>
+    <script>
+        const order = {
+            id: 1234,
+            customer: "John Doe",
+            items: ["book", "pen"],
+            total: 25.00
+        };
+
+        const { customer, total } = order;
+        const newOrder = { customer, total };
+
+        document.getElementById("demo").innerHTML = JSON.stringify(newOrder);
+    </script>
+</body>
+
+</html>

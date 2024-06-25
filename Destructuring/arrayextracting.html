@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Extract the first element from an array and the remaining elements as a separate
+        array</b></p>
+        <p id="demo"></p>
+        <p id="result"></p>
+        <script>
+            const fruits = ["apple", "banana", "orange", "mango"];
+
+            let {[0]:fruits1} = fruits;
+
+            let text = " ";
+            for(let x of fruits){
+                text += x +"<br>";
+                document.getElementById("result").innerHTML = text+"<br>";
+            }
+
+            document.getElementById("demo").innerHTML ="First element of the arrray is : " +fruits1 +"<br>Remaining elements of the array are : " + fruits.slice(1,4);
+
+          
+
+        </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Extract the first element from an array and the remaining elements as a separate array</b></p>
+    <p id="demo"></p>
+    <p id="result"></p>
+    <script>
+        const fruits = ["apple", "banana", "orange", "mango"];
+
+        // Destructuring to get the first element and the rest of the elements
+        let [first, ...rest] = fruits;
+
+        // Displaying the first element
+        document.getElementById("demo").innerHTML = "First element of the array is: " + first;
+
+        // Displaying the remaining elements
+        let text = "Remaining elements of the array are: <br>";
+        for (let x of rest) {
+            text += x + "<br>";
+        }
+        document.getElementById("result").innerHTML = text;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+#myDiv1, #myDiv2 {
+  background-color: coral;
+  padding: 50px;
+}
+
+#demo1, #demo2 {
+  background-color: white; 
+  font-size: 20px;
+  border: 1px solid;
+  padding: 20px;
+}

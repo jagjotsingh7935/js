@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="button" name="" id="" value="load new Document" onclick="myFunction()">
+    <input type="button" name="" value="Go Back" onclick="goBack()">
+    <input type="button" name="" id="" value="Go Forward" onclick="goForward()">
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = window.location.assign("https://www.hotstar.com/in/onboarding/profile");
+        }
+        function goBack(){
+         window.history.back();
+        }
+
+        function goForward(){
+            window.history.forward();
+        }
+    </script>
+</body>
+</html>

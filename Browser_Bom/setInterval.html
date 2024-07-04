@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+</style>
+<body>
+
+    <p id="data"></p>
+    <button onclick="clearInterval(myvar)">Stop it</button>
+   
+    <script>
+       let myvar = setInterval(myFunction,1000);
+        // setInterval(myFunction,1000);
+
+        function myFunction(){
+            const date = new Date();
+            document.getElementById("data").innerHTML = date.toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>

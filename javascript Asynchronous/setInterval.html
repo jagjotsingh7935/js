@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <p id="demo"></p>
+    <script>
+        setInterval(myFunction, 1000);
+
+        function myFunction() {
+            let date = new Date();
+            document.getElementById("demo").innerHTML = date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
+            document.getElementById("demo").style.textAlign = "center";
+            document.getElementById("demo").style.fontFamily = "Roboto";
+            document.getElementById("demo").style.fontSize = "250px";
+            document.getElementById("demo").style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>

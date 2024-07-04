@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+
+      
+
+        let myPromise = new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                let x = 1;
+                if (x == 0) {
+                    resolve("Hello World");
+                }
+                else {
+                    reject("Hello Javascript");
+                }
+            }, 3000)
+           
+        })
+         function myDisplay(){
+        setTimeout(function(){
+            alert("I love You");
+           },5000);
+        }
+
+        myPromise.then(
+            function (value) {
+                document.getElementById("demo").innerHTML = value;
+            },
+
+            function (error) {
+                document.getElementById("demo").innerHTML = error;
+            }
+        );
+        document.getElementById("demo1").innerHTML = myDisplay();
+        
+   
+     
+
+    </script>
+</body>
+
+</html>

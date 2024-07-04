@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Adding HTML elements using node property</b></p>
+    <p id="demo"></p>
+    <div id="div1">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is a another Pragraph</p>
+    </div>
+    <script>
+        const paragraph = document.createElement("p");
+        const node = document.createTextNode("This is a new paragraph");
+        paragraph.appendChild(node);
+
+        const element = document.getElementById("div1");
+        element.appendChild(paragraph);
+
+        const child = document.getElementById("p1");
+        element.insertBefore(paragraph,child);            //eh use krn naal paragraph p1 sbb ton pehla insert hoju
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const myNumbers = [1, 3, -5, -9, 0, 7, -4];
+
+        const positiveNumbers = removeNegative(myNumbers, (x) => x >= 0);
+
+
+        document.getElementById("demo").innerHTML = positiveNumbers;
+
+
+        function removeNegative(numbers, myCallback) {
+            const array = [];
+            for (const x of numbers) {
+                if (myCallback(x)) {
+                    array.push(x);
+                }
+            }
+            return array;
+        }
+    </script>
+</body>
+
+</html>

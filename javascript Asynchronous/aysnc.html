@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>The keyword async before a function makes the function return a promise:</b></p>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(some){
+            window.document.getElementById("demo").innerHTML = some;
+        }
+
+        async function myFunction(){
+            let a= new Date();
+            return a;
+        }
+
+        myFunction().then(
+            function(value){myDisplayer(value)},
+            function (value) {myDisplayer(value)}
+        );
+        
+    </script>
+</body>
+</html>

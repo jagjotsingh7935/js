@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="justify-content: center; align-items: center;  padding:300px; margin: 300px; margin-top: 50px;">
+        <input type="text" name="" id="check" min="100" max="300" placeholder="Enter Value Between 100 and 300"
+            style="width: 300px; height: 100px;" required><br><br>
+        <button onclick="myFunction()" style="color: white; background-color: blue;">Try It</button>
+    </div>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            const input = document.getElementById("check");
+
+            if (!input.checkValidity()) {
+                document.getElementById("demo").innerHTML = input.validationMessage;
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Input is Correct";
+            }
+        }
+    </script>
+</body>
+
+</html>

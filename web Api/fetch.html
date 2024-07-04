@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetch</title>
+</head>
+
+<body>
+    <button onclick="getFacts()" >Try It!</button>
+    <p id="data"></p>
+    <script>
+       let URL="https://cat-fact.herokuapp.com/facts" ;
+       const paraData=document.querySelector('#data');
+    
+       async function getFacts (){
+            let response=  await fetch(URL);
+            // console.log(response);
+            let data=await response.json();
+            // console.log(data[0].text);
+            
+            // console.log(response.status);
+            // paraData= response.status
+            let tex = " ";
+        for(let x of data){
+            tex+= x.text+"<br>";
+
+        }
+
+            document.getElementById("data").innerHTML = tex;
+    }
+   
+
+        
+    </script>
+</body>
+</html>

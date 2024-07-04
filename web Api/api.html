@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let URL = "https://api.nationalize.io/?name=nathaniel";
+
+        const data = document.querySelectorAll("#demo");
+
+        async function myFunction(){
+            let response= await fetch(URL);
+            // console.log(response);
+            let format = await response.text();
+
+            // document.getElementById("demo").innerHTML =format;
+            // console.log(format);
+            console.log(format);
+           
+        // document.getElementById("demo").innerHTML = myFunction();
+        document.getElementById("demo").innerHTML = format;
+    }
+    myFunction();
+        
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        getText("https://api.nationalize.io/?name=nathaniel");
+
+async function getText(file) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  document.getElementById("demo").innerHTML = myText;
+}
+    </script>
+</body>
+</html> -->
